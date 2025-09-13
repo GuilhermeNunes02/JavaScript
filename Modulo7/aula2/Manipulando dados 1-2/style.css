@@ -1,0 +1,106 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 40px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===== INPUT + BOTÃO ===== */
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#descricao {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+}
+
+#btnAdicionar {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#btnAdicionar:hover {
+  background: #218838;
+}
+
+/* ===== LISTA DE TAREFAS ===== */
+#listaTarefas {
+  list-style: none;
+}
+
+#listaTarefas li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  margin: 6px 0;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+/* Checkbox + descrição */
+.tarefa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Tarefas concluídas */
+.concluida {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Botão remover */
+.btn-remover {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #dc3545;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.btn-remover:hover {
+  transform: scale(1.2);
+  color: #a71d2a;
+}
