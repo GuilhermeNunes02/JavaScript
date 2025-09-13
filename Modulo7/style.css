@@ -1,0 +1,114 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== GERAL ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 50px;
+  color: #333;
+}
+
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #444;
+}
+
+/* ===== INPUT + BOTÕES ===== */
+.input-area {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#nome {
+  padding: 10px;
+  flex: 1;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#nome:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 6px rgba(255,111,97,0.6);
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 16px;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+#btnCurtir {
+  background: #ff6f61;
+}
+
+#btnCurtir:hover {
+  background: #ff3b2f;
+  transform: scale(1.05);
+}
+
+.btn-limpar {
+  background: #555;
+}
+
+.btn-limpar:hover {
+  background: #222;
+  transform: scale(1.05);
+}
+
+/* ===== MENSAGEM ===== */
+#mensagemCurtidas {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ===== LISTA ===== */
+#listaCurtidas {
+  margin-top: 15px;
+  list-style: none;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+#listaCurtidas li {
+  padding: 6px;
+  background: #f9f9f9;
+  margin: 5px 0;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+#listaCurtidas li:hover {
+  background: #ffe0db;
+}
