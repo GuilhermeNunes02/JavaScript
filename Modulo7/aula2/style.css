@@ -1,0 +1,92 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 40px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* ===== SEARCH AREA ===== */
+.search-area {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#campoBusca {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+}
+
+#btnBuscar {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#btnBuscar:hover {
+  background: #0056b3;
+}
+
+/* ===== MENSAGEM ===== */
+#mensagem {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* ===== LISTA DE USUÁRIOS ===== */
+#listaUsuarios {
+  list-style: none;
+  text-align: left;
+}
+
+#listaUsuarios li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f9f9f9;
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+#listaUsuarios img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
